@@ -27,6 +27,16 @@ int convertNum(string letter) {
   // cout << letter << ": " << intChar[letter] << endl;
   return intChar[letter];
 }
+/*Instead of using a function to convert the alphabet to number
+you can use the ASCII value
+eg for lowercase it'll be ASCII Value - 96 and for uppercase it'll be ASCII -38
+you can get the ASCII value using the int() function
+Eg 
+Input: cout<<int('a)-96<<endl;
+Output: 1
+or Input: cout<<int('A')-38<<endl;
+Ouput: 27
+*/
 
 int main() {
   ifstream dataFile("data.txt");
